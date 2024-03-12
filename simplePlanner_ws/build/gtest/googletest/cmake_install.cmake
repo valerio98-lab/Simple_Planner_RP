@@ -2,7 +2,7 @@
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/parallels/Desktop/Parallels Shared Folders/Robot Programming/SimplePlanner/simplePlanner_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/parallels/Desktop/Parallels Shared Folders/Robot Programming/SimplePlanner/Simple_Planner_RP/simplePlanner_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

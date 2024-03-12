@@ -9,6 +9,7 @@ project(simple_map_planner)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
   nav_msgs
+  geometry_msgs
   roscpp
   sensor_msgs
   std_msgs
@@ -135,7 +136,9 @@ include_directories(
 ## Declare a C++ executable
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
-# add_executable(${PROJECT_NAME}_node src/simple_map_planner_node.cpp)
+add_executable(map_listener_node src/map_listener.cpp)
+target_link_libraries(map_listener_node ${catkin_LIBRARIES})
+add_dependencies(map_listener_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the

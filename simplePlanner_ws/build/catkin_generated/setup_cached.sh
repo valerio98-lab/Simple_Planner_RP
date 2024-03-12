@@ -7,7 +7,3 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/parallels/Desktop/Parallels Shared Folders/Robot Programming/SimplePlanner/simplePlanner_ws/devel:$CMAKE_PREFIX_PATH"
-export PWD='/media/psf/Robot Programming/SimplePlanner/simplePlanner_ws/build'
-export ROSLISP_PACKAGE_DIRECTORIES='/home/parallels/Desktop/Parallels Shared Folders/Robot Programming/SimplePlanner/simplePlanner_ws/devel/share/common-lisp'
-export ROS_PACKAGE_PATH="/home/parallels/Desktop/Parallels Shared Folders/Robot Programming/SimplePlanner/simplePlanner_ws/src:$ROS_PACKAGE_PATH"

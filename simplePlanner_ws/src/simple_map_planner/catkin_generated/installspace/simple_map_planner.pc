@@ -1,0 +1,8 @@
+prefix=/usr/local
+
+Name: simple_map_planner
+Description: Description of simple_map_planner
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
