@@ -15,6 +15,26 @@ geometry_msgs/PoseStamped.h
 -
 geometry_msgs/PoseWithCovarianceStamped.h
 -
+planning_alg.h
+/home/parallels/Desktop/Parallels Shared Folders/Robot Programming/SimplePlanner/Simple_Planner_RP/simplePlanner_ws/src/simple_map_planner/src/planning_alg.h
+
+/home/parallels/Desktop/Parallels Shared Folders/Robot Programming/SimplePlanner/Simple_Planner_RP/simplePlanner_ws/src/simple_map_planner/src/planning_alg.h
+ros/ros.h
+-
+nav_msgs/OccupancyGrid.h
+-
+geometry_msgs/PoseStamped.h
+-
+geometry_msgs/PoseWithCovarianceStamped.h
+-
+unordered_map
+-
+queue
+-
+vector
+-
+functional
+-
 
 /opt/ros/noetic/include/geometry_msgs/Point.h
 string

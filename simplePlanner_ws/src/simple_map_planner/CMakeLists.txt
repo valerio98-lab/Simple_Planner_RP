@@ -136,7 +136,7 @@ include_directories(
 ## Declare a C++ executable
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
-add_executable(map_listener_node src/map_listener.cpp)
+add_executable(map_listener_node src/map_listener.cpp src/planning_alg.cpp)
 target_link_libraries(map_listener_node ${catkin_LIBRARIES})
 add_dependencies(map_listener_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 

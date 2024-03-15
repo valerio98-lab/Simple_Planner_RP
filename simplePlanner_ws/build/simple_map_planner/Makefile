@@ -974,6 +974,33 @@ src/map_listener.cpp.s:
 	cd "/media/psf/Robot Programming/SimplePlanner/Simple_Planner_RP/simplePlanner_ws/build" && $(MAKE) -f simple_map_planner/CMakeFiles/map_listener_node.dir/build.make simple_map_planner/CMakeFiles/map_listener_node.dir/src/map_listener.cpp.s
 .PHONY : src/map_listener.cpp.s
 
+src/planning_alg.o: src/planning_alg.cpp.o
+
+.PHONY : src/planning_alg.o
+
+# target to build an object file
+src/planning_alg.cpp.o:
+	cd "/media/psf/Robot Programming/SimplePlanner/Simple_Planner_RP/simplePlanner_ws/build" && $(MAKE) -f simple_map_planner/CMakeFiles/map_listener_node.dir/build.make simple_map_planner/CMakeFiles/map_listener_node.dir/src/planning_alg.cpp.o
+.PHONY : src/planning_alg.cpp.o
+
+src/planning_alg.i: src/planning_alg.cpp.i
+
+.PHONY : src/planning_alg.i
+
+# target to preprocess a source file
+src/planning_alg.cpp.i:
+	cd "/media/psf/Robot Programming/SimplePlanner/Simple_Planner_RP/simplePlanner_ws/build" && $(MAKE) -f simple_map_planner/CMakeFiles/map_listener_node.dir/build.make simple_map_planner/CMakeFiles/map_listener_node.dir/src/planning_alg.cpp.i
+.PHONY : src/planning_alg.cpp.i
+
+src/planning_alg.s: src/planning_alg.cpp.s
+
+.PHONY : src/planning_alg.s
+
+# target to generate assembly for a file
+src/planning_alg.cpp.s:
+	cd "/media/psf/Robot Programming/SimplePlanner/Simple_Planner_RP/simplePlanner_ws/build" && $(MAKE) -f simple_map_planner/CMakeFiles/map_listener_node.dir/build.make simple_map_planner/CMakeFiles/map_listener_node.dir/src/planning_alg.cpp.s
+.PHONY : src/planning_alg.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -1042,6 +1069,9 @@ help:
 	@echo "... src/map_listener.o"
 	@echo "... src/map_listener.i"
 	@echo "... src/map_listener.s"
+	@echo "... src/planning_alg.o"
+	@echo "... src/planning_alg.i"
+	@echo "... src/planning_alg.s"
 .PHONY : help
 
 

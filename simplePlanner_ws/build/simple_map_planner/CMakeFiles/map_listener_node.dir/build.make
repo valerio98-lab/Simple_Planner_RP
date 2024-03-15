@@ -70,14 +70,29 @@ simple_map_planner/CMakeFiles/map_listener_node.dir/src/map_listener.cpp.s: cmak
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/map_listener_node.dir/src/map_listener.cpp.s"
 	cd "/media/psf/Robot Programming/SimplePlanner/Simple_Planner_RP/simplePlanner_ws/build/simple_map_planner" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/parallels/Desktop/Parallels Shared Folders/Robot Programming/SimplePlanner/Simple_Planner_RP/simplePlanner_ws/src/simple_map_planner/src/map_listener.cpp" -o CMakeFiles/map_listener_node.dir/src/map_listener.cpp.s
 
+simple_map_planner/CMakeFiles/map_listener_node.dir/src/planning_alg.cpp.o: simple_map_planner/CMakeFiles/map_listener_node.dir/flags.make
+simple_map_planner/CMakeFiles/map_listener_node.dir/src/planning_alg.cpp.o: /home/parallels/Desktop/Parallels\ Shared\ Folders/Robot\ Programming/SimplePlanner/Simple_Planner_RP/simplePlanner_ws/src/simple_map_planner/src/planning_alg.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/media/psf/Robot Programming/SimplePlanner/Simple_Planner_RP/simplePlanner_ws/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object simple_map_planner/CMakeFiles/map_listener_node.dir/src/planning_alg.cpp.o"
+	cd "/media/psf/Robot Programming/SimplePlanner/Simple_Planner_RP/simplePlanner_ws/build/simple_map_planner" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/map_listener_node.dir/src/planning_alg.cpp.o -c "/home/parallels/Desktop/Parallels Shared Folders/Robot Programming/SimplePlanner/Simple_Planner_RP/simplePlanner_ws/src/simple_map_planner/src/planning_alg.cpp"
+
+simple_map_planner/CMakeFiles/map_listener_node.dir/src/planning_alg.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/map_listener_node.dir/src/planning_alg.cpp.i"
+	cd "/media/psf/Robot Programming/SimplePlanner/Simple_Planner_RP/simplePlanner_ws/build/simple_map_planner" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/parallels/Desktop/Parallels Shared Folders/Robot Programming/SimplePlanner/Simple_Planner_RP/simplePlanner_ws/src/simple_map_planner/src/planning_alg.cpp" > CMakeFiles/map_listener_node.dir/src/planning_alg.cpp.i
+
+simple_map_planner/CMakeFiles/map_listener_node.dir/src/planning_alg.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/map_listener_node.dir/src/planning_alg.cpp.s"
+	cd "/media/psf/Robot Programming/SimplePlanner/Simple_Planner_RP/simplePlanner_ws/build/simple_map_planner" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/parallels/Desktop/Parallels Shared Folders/Robot Programming/SimplePlanner/Simple_Planner_RP/simplePlanner_ws/src/simple_map_planner/src/planning_alg.cpp" -o CMakeFiles/map_listener_node.dir/src/planning_alg.cpp.s
+
 # Object files for target map_listener_node
 map_listener_node_OBJECTS = \
-"CMakeFiles/map_listener_node.dir/src/map_listener.cpp.o"
+"CMakeFiles/map_listener_node.dir/src/map_listener.cpp.o" \
+"CMakeFiles/map_listener_node.dir/src/planning_alg.cpp.o"
 
 # External object files for target map_listener_node
 map_listener_node_EXTERNAL_OBJECTS =
 
 /home/parallels/Desktop/Parallels\ Shared\ Folders/Robot\ Programming/SimplePlanner/Simple_Planner_RP/simplePlanner_ws/devel/lib/simple_map_planner/map_listener_node: simple_map_planner/CMakeFiles/map_listener_node.dir/src/map_listener.cpp.o
+/home/parallels/Desktop/Parallels\ Shared\ Folders/Robot\ Programming/SimplePlanner/Simple_Planner_RP/simplePlanner_ws/devel/lib/simple_map_planner/map_listener_node: simple_map_planner/CMakeFiles/map_listener_node.dir/src/planning_alg.cpp.o
 /home/parallels/Desktop/Parallels\ Shared\ Folders/Robot\ Programming/SimplePlanner/Simple_Planner_RP/simplePlanner_ws/devel/lib/simple_map_planner/map_listener_node: simple_map_planner/CMakeFiles/map_listener_node.dir/build.make
 /home/parallels/Desktop/Parallels\ Shared\ Folders/Robot\ Programming/SimplePlanner/Simple_Planner_RP/simplePlanner_ws/devel/lib/simple_map_planner/map_listener_node: /opt/ros/noetic/lib/libtf.so
 /home/parallels/Desktop/Parallels\ Shared\ Folders/Robot\ Programming/SimplePlanner/Simple_Planner_RP/simplePlanner_ws/devel/lib/simple_map_planner/map_listener_node: /opt/ros/noetic/lib/libtf2_ros.so
@@ -102,7 +117,7 @@ map_listener_node_EXTERNAL_OBJECTS =
 /home/parallels/Desktop/Parallels\ Shared\ Folders/Robot\ Programming/SimplePlanner/Simple_Planner_RP/simplePlanner_ws/devel/lib/simple_map_planner/map_listener_node: /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0
 /home/parallels/Desktop/Parallels\ Shared\ Folders/Robot\ Programming/SimplePlanner/Simple_Planner_RP/simplePlanner_ws/devel/lib/simple_map_planner/map_listener_node: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
 /home/parallels/Desktop/Parallels\ Shared\ Folders/Robot\ Programming/SimplePlanner/Simple_Planner_RP/simplePlanner_ws/devel/lib/simple_map_planner/map_listener_node: simple_map_planner/CMakeFiles/map_listener_node.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/media/psf/Robot Programming/SimplePlanner/Simple_Planner_RP/simplePlanner_ws/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable \"/home/parallels/Desktop/Parallels Shared Folders/Robot Programming/SimplePlanner/Simple_Planner_RP/simplePlanner_ws/devel/lib/simple_map_planner/map_listener_node\""
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/media/psf/Robot Programming/SimplePlanner/Simple_Planner_RP/simplePlanner_ws/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable \"/home/parallels/Desktop/Parallels Shared Folders/Robot Programming/SimplePlanner/Simple_Planner_RP/simplePlanner_ws/devel/lib/simple_map_planner/map_listener_node\""
 	cd "/media/psf/Robot Programming/SimplePlanner/Simple_Planner_RP/simplePlanner_ws/build/simple_map_planner" && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/map_listener_node.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
