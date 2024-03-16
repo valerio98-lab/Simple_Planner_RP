@@ -6,15 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/parallels/Desktop/Parallels Shared Folders/Robot Programming/SimplePlanner/Simple_Planner_RP/simplePlanner_ws/src/simple_map_planner/src/map_listener.cpp
-ros/ros.h
--
-nav_msgs/OccupancyGrid.h
--
-geometry_msgs/PoseStamped.h
--
-geometry_msgs/PoseWithCovarianceStamped.h
--
+/home/parallels/Desktop/Parallels Shared Folders/Robot Programming/SimplePlanner/Simple_Planner_RP/simplePlanner_ws/src/simple_map_planner/src/planning_alg.cpp
 planning_alg.h
 /home/parallels/Desktop/Parallels Shared Folders/Robot Programming/SimplePlanner/Simple_Planner_RP/simplePlanner_ws/src/simple_map_planner/src/planning_alg.h
 
@@ -26,6 +18,8 @@ nav_msgs/OccupancyGrid.h
 geometry_msgs/PoseStamped.h
 -
 geometry_msgs/PoseWithCovarianceStamped.h
+-
+visualization_msgs/MarkerArray.h
 -
 unordered_map
 -
@@ -131,6 +125,22 @@ geometry_msgs/PoseWithCovariance.h
 -
 
 /opt/ros/noetic/include/geometry_msgs/Quaternion.h
+string
+-
+vector
+-
+memory
+-
+ros/types.h
+-
+ros/serialization.h
+-
+ros/builtin_message_traits.h
+-
+ros/message_operations.h
+-
+
+/opt/ros/noetic/include/geometry_msgs/Vector3.h
 string
 -
 vector
@@ -834,6 +844,22 @@ ros/forwards.h
 
 /opt/ros/noetic/include/rosconsole/macros_generated.h
 
+/opt/ros/noetic/include/std_msgs/ColorRGBA.h
+string
+-
+vector
+-
+memory
+-
+ros/types.h
+-
+ros/serialization.h
+-
+ros/builtin_message_traits.h
+-
+ros/message_operations.h
+-
+
 /opt/ros/noetic/include/std_msgs/Header.h
 string
 -
@@ -848,6 +874,52 @@ ros/serialization.h
 ros/builtin_message_traits.h
 -
 ros/message_operations.h
+-
+
+/opt/ros/noetic/include/visualization_msgs/Marker.h
+string
+-
+vector
+-
+memory
+-
+ros/types.h
+-
+ros/serialization.h
+-
+ros/builtin_message_traits.h
+-
+ros/message_operations.h
+-
+std_msgs/Header.h
+-
+geometry_msgs/Pose.h
+-
+geometry_msgs/Vector3.h
+-
+std_msgs/ColorRGBA.h
+-
+geometry_msgs/Point.h
+-
+std_msgs/ColorRGBA.h
+-
+
+/opt/ros/noetic/include/visualization_msgs/MarkerArray.h
+string
+-
+vector
+-
+memory
+-
+ros/types.h
+-
+ros/serialization.h
+-
+ros/builtin_message_traits.h
+-
+ros/message_operations.h
+-
+visualization_msgs/Marker.h
 -
 
 /opt/ros/noetic/include/xmlrpcpp/XmlRpcDecl.h

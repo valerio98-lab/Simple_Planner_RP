@@ -5,6 +5,7 @@
 #include <nav_msgs/OccupancyGrid.h>
 #include <geometry_msgs/PoseStamped.h>
 #include <geometry_msgs/PoseWithCovarianceStamped.h>
+#include <visualization_msgs/MarkerArray.h>
 #include <unordered_map>
 #include <queue>
 #include <vector>

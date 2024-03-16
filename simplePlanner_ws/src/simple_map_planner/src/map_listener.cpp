@@ -14,14 +14,12 @@ class MapListener {
       ROS_INFO("map_listener: Subscribed to initialpose topic");
       sub_goal = n_.subscribe("move_base_simple/goal", 1000, &MapListener::goalPoseCallback, this);
       ROS_INFO("map_listener: Subscribed to move_base_simple/goal topic");
-
     }
 
     void mapCallback(const nav_msgs::OccupancyGrid::ConstPtr& msg) {
       ROS_INFO("map_listener: mapCallback");
       map_received = true;
       map = *msg;
-      Path_planning();
       ROS_INFO("Received map: %d X %d", msg->info.width, msg->info.height);
     }
 
@@ -29,7 +27,6 @@ class MapListener {
       ROS_INFO("map_listener: initialPoseCallback");
       initial_pose = *msg;
       initial_pose_received = true;
-      Path_planning();
       ROS_INFO("Received initial pose: %0.2f, %0.2f, %0.2f, %0.2f", 
                                                 initial_pose.pose.pose.position.x, 
                                                 initial_pose.pose.pose.position.y, 
@@ -41,7 +38,6 @@ class MapListener {
       ROS_INFO("map_listener: goalPoseCallback");
       goal_pose = *msg;
       goal_pose_received = true;
-      Path_planning();
       ROS_INFO("Received goal pose: %0.2f, %0.2f, %0.2f, %0.2f", 
                                             goal_pose.pose.position.x, 
                                             goal_pose.pose.position.y, 
@@ -52,7 +48,10 @@ class MapListener {
 
     void Path_planning() {
       if(map_received && initial_pose_received && goal_pose_received){
-        planner.planPath(initial_pose, goal_pose, map);
+          planner.planPath(initial_pose, goal_pose, map);
+          initial_pose_received = false;
+          goal_pose_received = false;
+          ROS_INFO("map_listener: Path planning");
       }
     }
   private:
@@ -77,8 +76,11 @@ int main(int argc, char **argv) {
 
   ROS_INFO("Map listener node started");
   MapListener map(n);
-  
-  ros::spin();
+
+  while(ros::ok()){
+    map.Path_planning();
+    ros::spinOnce();
+  }
   ROS_INFO("Map listener node finished");
   return 0;
 }
