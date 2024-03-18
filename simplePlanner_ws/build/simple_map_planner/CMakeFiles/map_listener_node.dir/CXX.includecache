@@ -6,6 +6,18 @@
 
 #IncludeRegexTransform: 
 
+/home/parallels/Desktop/Parallels Shared Folders/Robot Programming/SimplePlanner/Simple_Planner_RP/simplePlanner_ws/src/simple_map_planner/src/map_listener.cpp
+ros/ros.h
+-
+nav_msgs/OccupancyGrid.h
+-
+geometry_msgs/PoseStamped.h
+-
+geometry_msgs/PoseWithCovarianceStamped.h
+-
+planning_alg.h
+/home/parallels/Desktop/Parallels Shared Folders/Robot Programming/SimplePlanner/Simple_Planner_RP/simplePlanner_ws/src/simple_map_planner/src/planning_alg.h
+
 /home/parallels/Desktop/Parallels Shared Folders/Robot Programming/SimplePlanner/Simple_Planner_RP/simplePlanner_ws/src/simple_map_planner/src/planning_alg.cpp
 planning_alg.h
 /home/parallels/Desktop/Parallels Shared Folders/Robot Programming/SimplePlanner/Simple_Planner_RP/simplePlanner_ws/src/simple_map_planner/src/planning_alg.h
@@ -23,11 +35,15 @@ visualization_msgs/MarkerArray.h
 -
 unordered_map
 -
+utility
+-
 queue
 -
 vector
 -
 functional
+-
+iostream
 -
 
 /opt/ros/noetic/include/geometry_msgs/Point.h
