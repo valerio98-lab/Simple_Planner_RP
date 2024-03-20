@@ -209,7 +209,7 @@ void PlanningAlg::planPath(const geometry_msgs::PoseWithCovarianceStamped& initi
     start->heuristic = start_heuristic;
     start->cost = 0;
 
-    std::cout << "Metric set to euclidian: " << euclidian <<std::endl;
+    //std::cout << "Metric set to euclidian: " << euclidian <<std::endl;
     A_star(index, euclidian, open_set, closed_set, goal_path, cost_so_far, start, goal, map);
     
     //Manhattan
@@ -230,9 +230,9 @@ void PlanningAlg::planPath(const geometry_msgs::PoseWithCovarianceStamped& initi
     start->cost = 0;
     sleep(5);
     setMetric(false);
-    std::cout << "Metric set to manhattan: " << euclidian <<std::endl;
+    //std::cout << "Metric set to manhattan: " << euclidian <<std::endl;
     A_star(index, euclidian, open_set_man, closed_set_man, goal_path_man, cost_so_far_man, start, goal, map);
     setMetric(true);
-    std::cout << "Metric set to euclidian again: " << euclidian <<std::endl;
+    //std::cout << "Metric set to euclidian again: " << euclidian <<std::endl;
 }
 
